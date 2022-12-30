@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* HEADER SECTION */
+
+
+header{
+    border-bottom: black 1px solid;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   text-align: center;
+    height: 7rem ;
+   flex-shrink: 1;
+}
+
+.game-title{
+    font-size: 1.9em;
+}
+
+.game-subtitle{
+   font-size: 1.2em;
+   position: absolute;
+   margin-top: 4em;
+  
+}
+
+/* MAIN SECTION */
+
+.random-container{
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+   padding-top: 2rem;
+    
+}
+
+.random-number{
+    border: 1px solid black;
+    font-size: 3em;
+    padding: .4em .9em;
+ 
+}
+
+.status-container{
+   
+    text-align: center;
+    
+}
+
+.status-text{
+    
+   font-size: 1.3em;
+}
+
+
+/* INPUT CONTAINER */
+
+.input-container{
+display: flex;
+border-bottom: 1px solid black;
+justify-content: space-around;
+padding-top: 2rem;
+align-items: center;
+
+}
+
+.score{
+    font-size: 1.2em;
+    order: 3;
+   
+}
+
+.input-text{
+    width: 8em;
+    height: 3em;
+  margin-right: 2em;
+   order: 2;
+}
+
+.highscore{
+    font-size: 1.2em;
+}
+
+.check-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn-check{
+    margin-top: 3em;
+    width: 8em;
+    height: 3em;
+}
