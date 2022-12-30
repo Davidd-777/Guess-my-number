@@ -5,13 +5,16 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
+    font-family: 'VT323', monospace;
+    background-color: rgb(51, 46, 46);
+    color: rgb(200, 200, 34);
 }
 
 /* HEADER SECTION */
 
 
 header{
-    border-bottom: black 1px solid;
+    /* border-bottom: black 1px solid; */
    display: flex;
    justify-content: center;
    align-items: center;
@@ -19,15 +22,15 @@ header{
    width: 100%;
    text-align: center;
     height: 7rem ;
-   flex-shrink: 1;
+  
 }
 
 .game-title{
-    font-size: 1.9em;
+    font-size: 4em;
 }
 
 .game-subtitle{
-   font-size: 1.2em;
+   font-size: 2em;
    position: absolute;
    margin-top: 4em;
   
@@ -36,32 +39,31 @@ header{
 /* MAIN SECTION */
 
 .random-container{
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 8rem;
-   padding-top: 2rem;
+   padding-top: 5rem;
     
 }
 
 .random-number{
-    border: 1px solid black;
+    border: 2px solid rgb(200, 200, 34);
     font-size: 3em;
     padding: .4em .9em;
  
 }
 
 .status-container{
-   
     text-align: center;
+
     
 }
 
 .status-text{
-    
-   font-size: 1.3em;
+   font-size: 2em;
 }
 
 
@@ -69,7 +71,7 @@ header{
 
 .input-container{
 display: flex;
-border-bottom: 1px solid black;
+/* border-bottom: 1px solid black; */
 justify-content: space-around;
 padding-top: 2rem;
 align-items: center;
@@ -77,20 +79,30 @@ align-items: center;
 }
 
 .score{
-    font-size: 1.2em;
+    font-size: 1.7em;
     order: 3;
+    
    
 }
 
 .input-text{
-    width: 8em;
-    height: 3em;
+    
   margin-right: 2em;
    order: 2;
+   border: solid 2px rgb(200, 200, 34);
+   border-radius: .5em ;
+   background-color: rgb(200, 200, 34);
+   font-family: 'VT323', monospace;
+    font-size: 2em;
+    width: 3em;
+    height: 1.5em;
+    text-align: center;
+  margin-left: 1em;
+  
 }
 
 .highscore{
-    font-size: 1.2em;
+    font-size: 1.7em;
 }
 
 .check-container{
@@ -101,6 +113,55 @@ align-items: center;
 }
 .btn-check{
     margin-top: 3em;
-    width: 8em;
+    width: 12em;
     height: 3em;
+    font-size: 1.1em;
+    margin-left: .5em;
+    border: 2px solid black;
+    border-radius: 1.5em;
+    font-weight: bold;
+    background-color: rgb(200, 200, 34);
+    margin-right: .7em;
+}
+
+.btn-check:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+@media (min-width:350px){
+header{
+    font-size: .8em;
+
+}
+
+.random-number{
+    margin-bottom: 3em;
+}
+}
+.btn-check{
+    margin-top: 1em;
+}
+
+.score ,.highscore{
+    text-align: center;
+}
+
+@media (min-width:800px) {
+.principal-container{
+    margin-top: 6em;
+font-size: 1.3em;
+}
+}
+
+@media (min-width:1024px){
+header{
+    font-size: 1em;
+}
+
+.random-number{
+    margin-top: 3em;
+}
+
 }
