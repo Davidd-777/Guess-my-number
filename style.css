@@ -65,6 +65,8 @@ header{
 
 .status-text{
    font-size: 2em;
+   background-color: rgb(200, 200, 34) ;
+   color: black;
 }
 
 
@@ -122,11 +124,33 @@ align-items: center;
     border-radius: 1.5em;
     font-weight: bold;
     background-color: rgb(200, 200, 34);
-    margin-right: .7em;
+    margin-right: .3em;
     font-family: 'VT323', monospace;
+    
+
 }
 
-.btn-check:hover{
+.btn-tryagain{
+    width: 5em;
+    height: 2em;
+    font-size: 2em;
+    border: 2px solid black;
+    border-radius: 1.5em;
+    font-weight: bold;
+    background-color: rgb(200, 200, 34);
+    font-family: 'VT323', monospace;
+    margin-top: 1em;
+    display: none;
+    
+
+}
+
+.btn-check:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.btn-tryagain:hover{
     cursor: pointer;
     background-color: rgb(255, 255, 255);
     color: black;
